@@ -1,0 +1,36 @@
+# WordPress core files (don't version control WP core)
+app/public/wp-admin/
+app/public/wp-includes/
+app/public/wp-*.php
+!app/public/wp-config-sample.php
+
+# Sensitive config
+app/public/wp-config.php
+
+# Default WordPress themes
+app/public/wp-content/themes/twentytwentythree/
+app/public/wp-content/themes/twentytwentyfour/
+app/public/wp-content/themes/twentytwentyfive/
+
+# Uploads (media files - large binaries)
+app/public/wp-content/uploads/
+
+# Logs
+logs/
+*.log
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local by Flywheel
+conf/nginx/
+conf/php/
+
+# PHP opcache
+*.php.opcache
