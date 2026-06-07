@@ -48,7 +48,13 @@
                 <?php if ( has_custom_logo() ) : ?>
                     <?php the_custom_logo(); ?>
                 <?php else : ?>
-                    <div class="logo-uwp-badge" aria-hidden="true">UWP</div>
+                    <img
+                        src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo.png' ); ?>"
+                        alt="<?php esc_attr_e( 'Leo Titus Preville — UWP Babonneau', 'titus-preville-campaign' ); ?>"
+                        class="site-logo-img"
+                        width="60"
+                        height="60"
+                    >
                     <div class="logo-text">
                         <span class="logo-name"><?php esc_html_e( 'Leo Titus Preville', 'titus-preville-campaign' ); ?></span>
                         <span class="logo-subtitle"><?php esc_html_e( 'UWP · Babonneau', 'titus-preville-campaign' ); ?></span>
